@@ -56,7 +56,7 @@ export default function Home() {
             <p className="text-center font-extralight text-sm lg:px-56">
               Welcome to the world's first decentralized mobile gaming
               marketplace. Leveraging cutting-edge blockchain technology on
-              XION, we’re bringing a new level of gaming accessibility to
+              XION, we're bringing a new level of gaming accessibility to
               everyone.Prepare yourself for an unparalleled mobile gaming
               experience that combines the power of blockchain with innovative,
               diverse gameplay.
