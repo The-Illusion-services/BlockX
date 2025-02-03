@@ -89,7 +89,7 @@ const Roulette = () => {
             </div>
           </article>
         </section>
-        <section className="bg-[#FFFFFF08] px-4 rounded-xl  w-[94%]  mx-auto  gap-y-2 flex flex-col py-2 lg:order-3 lg:w-[20%] lg:mt-20">
+        <section className="bg-[#FFFFFF08] px-4 rounded-xl  w-[94%]  mx-auto  gap-y-2 flex flex-col py-2 lg:order-3 lg:w-[20%] lg:mt-20 mt-10">
           <div className="text-white flex flex-col gap-y-2">
             <span>Place your bet</span>
             <div className="bg-[#FFFFFF0A] p-1 rounded-lg h-16 flex flex-col px-4 justify-center">
@@ -123,7 +123,7 @@ const Roulette = () => {
             Place a bet
           </button>
         </section>
-        <section className="bg-[#FFFFFF08] lg:bg-transpt px-4 rounded-xl  w-[94%]  mx-auto py-2  flex flex-col gap-y-3 lg:w-[20%] lg:mt-20">
+        <section className="bg-[#FFFFFF08] lg:bg-transpt px-4 rounded-xl  w-[94%]  mx-auto py-2  flex flex-col gap-y-3 lg:w-[20%] lg:mt-20 mt-10">
           <span className="text-white">Game Overview</span>
           <article>
             <span className="text-white">Tables</span>
