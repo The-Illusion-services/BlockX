@@ -25,12 +25,12 @@ export default function Home() {
         <Image
           src={bgGradient}
           alt=""
-          className="absolute z-10 w-30 w-[300px] h-[400px] lg:hidden"
+          className="absolute z-10 w-30 w-full h-[200px] lg:hidden"
         />
         <Image
           src={bgGradient}
           alt=""
-          className="absolute z-10 w-30 hidden lg:w-[1200px] lg:flex lg:justify-center "
+          className="absolute z-10 w-30 hidden lg:w-[1200px] h-[300px] lg:flex lg:justify-center "
         />
         <main className="px-8">
           <section
@@ -113,9 +113,9 @@ export default function Home() {
               mobile gaming
             </span>
           </div>
-          <section className="mt-10 flex flex-col gap-y-4 lg:flex-row lg:flex-wrap lg:justify-center lg:gap-x-10">
+          <section className="mt-10 flex flex-col gap-y-4 lg:flex-row lg:flex-wrap lg:justify-center lg:gap-x-10 ">
             <article
-              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 w-[327px] h-[143px]"
+              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 lg:w-[327px] w-full h-[143px]"
               data-aos="fade-up"
               data-aos-easing="ease-out"
               data-aos-duration="1200"
@@ -130,7 +130,7 @@ export default function Home() {
               </div>
             </article>
             <article
-              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 w-[327px] h-[143px]"
+              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 lg:w-[327px] w-full h-[143px]"
               data-aos="fade-up"
               data-aos-easing="ease-out"
               data-aos-duration="1200"
@@ -145,7 +145,7 @@ export default function Home() {
               </div>
             </article>
             <article
-              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 w-[327px] h-[143px]"
+              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 lg:w-[327px] w-full h-[143px]"
               data-aos="fade-up"
               data-aos-easing="ease-out"
               data-aos-duration="1200"
@@ -160,7 +160,7 @@ export default function Home() {
               </div>
             </article>
             <article
-              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 w-[327px] h-[143px]"
+              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 lg:w-[327px] w-full h-[143px]"
               data-aos="fade-up"
               data-aos-easing="ease-out"
               data-aos-duration="1200"
@@ -175,7 +175,7 @@ export default function Home() {
               </div>
             </article>
             <article
-              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 w-[327px] h-[143px]"
+              className="flex flex-col gap-y-3 border bg-[#0B0D2775] border-[#061C3D] rounded-lg p-4 lg:w-[327px] w-full h-[143px]"
               data-aos="fade-up"
               data-aos-easing="ease-out"
               data-aos-duration="1200"

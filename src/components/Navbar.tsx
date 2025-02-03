@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center fixed w-full px-4 z-50 h-16 top-0 py-2 bg-black text-white lg:bg-[#060712f2] lg:w-[90%] lg:rounded-[20px]  lg:mx-auto lg:right-0 lg:left-0">
+    <div className="flex justify-between items-center fixed w-full px-4 z-40 h-16 top-0 py-2 bg-black text-white lg:bg-[#060712f2] lg:w-[90%] lg:rounded-[20px]  lg:mx-auto lg:right-0 lg:left-0">
       {showSideBar ? (
         <HiMiniXMark
           onClick={handleToggleNavbar}
