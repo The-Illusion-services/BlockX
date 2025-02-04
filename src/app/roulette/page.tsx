@@ -41,7 +41,7 @@ const Roulette = () => {
           <Image
             src={pointer}
             alt="roulette pointer"
-            className="absolute lg:h-48 h-[100px] w-10 lg:w-[76px] mt-[-360px] lg:mt-[-668px] ml-[170px] lg:ml-[340px] mx-auto flex justify-center items-center  "
+            className="absolute top-0 bottom-0  mx-auto flex right-0 left-0 h-32 w-12 mt-44 lg:h-48 lg:w-20 lg:mt-[184px]"
           />
 
           {/* Mobile View */}

@@ -11,6 +11,7 @@ import { SiNintendogamecube } from "react-icons/si";
 import Navbar from "@/components/Navbar";
 import latestPlayersWeb from "@/assets/landin-page/latest-players-lg.png";
 import bgGradient from "@/assets/landin-page/bg-gradient.png";
+import { useRouter } from "next/router";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -18,6 +19,8 @@ export default function Home() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
+  const router = useRouter()
   return (
     <section className="overflow-x-auto">
       <Navbar />
@@ -63,6 +66,7 @@ export default function Home() {
             </p>
             <article className="flex gap-x-4 relative z-20">
               <button
+              onClick={()=> router.push("/roulette")}
                 className="bg-[#5856D6] w-[140px] flex justify-center items-center gap-x-2 rounded-lg  "
                 data-aos="fade-right"
                 data-aos-easing="ease-out"
