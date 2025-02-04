@@ -2,7 +2,7 @@
 import CoinIcon from "@/assets/landin-page/blockcXCoin.png";
 import Image from "next/image";
 import { useState } from "react";
-import { FaCaretDown } from "react-icons/fa6";
+import { FaCaretDown, FaCaretUp } from "react-icons/fa6";
 import { HiMiniXMark } from "react-icons/hi2";
 import { TbMenu3 } from "react-icons/tb";
 
@@ -51,24 +51,30 @@ const Navbar = () => {
       )}
       <span className="hidden lg:inline-flex">BlockX</span>
       <section
-        className={` lg:justify-evenly  bg-[#060712f2] lg:bg-transparent fixed lg:relative top-0 mt-16 lg:mt-0 lg:flex-row left-0 lg:flex flex-col px-4  gap-y-4 ${
+        className={` lg:justify-evenly  bg-[#060712f2] lg:bg-transparent fixed lg:relative top-0 mt-16 lg:mt-0 lg:flex-row left-0 lg:flex flex-col px-4  gap-y-6 ${
           showSideBar
-            ? "flex h-screen opacity-100 w-[80%]"
-            : "hidden lg:flex h-0 opacity-0 lg:opacity-100 lg:w-[60%] w-0"
-        } transition-opacity`}
+            ? " h-screen opacity-100 w-[80%]"
+            : " h-0 opacity-0 lg:opacity-100 lg:w-[60%] w-0"
+        } transition-all flex`}
       >
         <div className="flex flex-col lg:flex-row lg:items-center justify-between lg:justify-normal">
-          <div className="flex items-center justify-between lg:gap-x-1">
+          <div
+            className="flex items-center justify-between lg:gap-x-1 cursor-pointer"
+            onClick={() => handleChangeActiveNavbarItem("game")}
+          >
             <span>Game</span>
-            <FaCaretDown
-              className="cursor-pointer"
-              onClick={() => handleChangeActiveNavbarItem("game")}
-            />
+            {activeNavbarItem.game ? (
+              <FaCaretUp />
+            ) : (
+              <FaCaretDown className="" />
+            )}
           </div>
           <div
             className={`lg:absolute ${
-              activeNavbarItem.game ? "flex" : "hidden"
-            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-sm lg:text-xs py-1`}
+              activeNavbarItem.game
+              ? " opacity-100 scale-100 h-48"
+              : " h-0 opacity-0 scale-0"
+          } bg-[#060712] flex lg:justify-evenly w-28 lg:mt-52 px-2 flex-col shadow-md text-sm lg:text-xs py-1 transition-all ease-in-out `}
           >
             <span>Roulette</span>
             <span>Price prediction</span>
@@ -80,18 +86,21 @@ const Navbar = () => {
             <span>Sports</span>
           </div>
         </div>
+
         <div className="flex flex-col lg:flex-row lg:items-center justify-between lg:justify-normal">
-          <div className="flex items-center justify-between lg:gap-x-1">
+          <div
+            className="flex items-center justify-between lg:gap-x-1 cursor-pointer"
+            onClick={() => handleChangeActiveNavbarItem("tools")}
+          >
             <span>Tools</span>
-            <FaCaretDown
-              className="cursor-pointer"
-              onClick={() => handleChangeActiveNavbarItem("tools")}
-            />
+            {activeNavbarItem.tools ? <FaCaretUp /> : <FaCaretDown />}
           </div>
           <div
             className={`lg:absolute ${
-              activeNavbarItem.tools ? "flex" : "hidden"
-            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-sm lg:text-xs py-1`}
+              activeNavbarItem.tools
+              ? " opacity-100 scale-100 h-48"
+              : " h-0 opacity-0 scale-0"
+          } bg-[#060712] flex lg:justify-evenly w-28 lg:mt-52 px-2 flex-col shadow-md text-sm lg:text-xs py-1 transition-all ease-in-out `}
           >
             <span>Roulette</span>
             <span>Price prediction</span>
@@ -104,17 +113,19 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center justify-between lg:justify-normal">
-          <div className="flex items-center justify-between lg:gap-x-1">
+          <div
+            className="flex items-center justify-between lg:gap-x-1 cursor-pointer"
+            onClick={() => handleChangeActiveNavbarItem("info")}
+          >
             <span>Info</span>
-            <FaCaretDown
-              className="cursor-pointer"
-              onClick={() => handleChangeActiveNavbarItem("info")}
-            />
+            {activeNavbarItem.info ? <FaCaretUp /> : <FaCaretDown />}
           </div>
           <div
             className={`lg:absolute ${
-              activeNavbarItem.info ? "flex" : "hidden"
-            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-sm lg:text-xs py-1`}
+              activeNavbarItem.info
+              ? " opacity-100 scale-100 h-48"
+              : " h-0 opacity-0 scale-0"
+          } bg-[#060712] flex lg:justify-evenly w-28 lg:mt-52 px-2 flex-col shadow-md text-sm lg:text-xs py-1 transition-all ease-in-out `}
           >
             <span>Roulette</span>
             <span>Price prediction</span>
@@ -127,17 +138,19 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center justify-between lg:justify-normal">
-          <div className="flex items-center justify-between lg:gap-x-1">
+          <div
+            className="flex items-center justify-between lg:gap-x-1 cursor-pointer"
+            onClick={() => handleChangeActiveNavbarItem("community")}
+          >
             <span>Community</span>
-            <FaCaretDown
-              className="cursor-pointer"
-              onClick={() => handleChangeActiveNavbarItem("community")}
-            />
+            {activeNavbarItem.community ? <FaCaretUp /> : <FaCaretDown />}
           </div>
           <div
             className={`lg:absolute ${
-              activeNavbarItem.community ? "flex" : "hidden"
-            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-sm lg:text-xs py-1`}
+              activeNavbarItem.community
+                ? " opacity-100 scale-100 h-48"
+                : " h-0 opacity-0 scale-0"
+            } bg-[#060712] flex lg:justify-evenly w-28 lg:mt-52 px-2 flex-col shadow-md text-sm lg:text-xs py-1 transition-all ease-in-out `}
           >
             <span>Roulette</span>
             <span>Price prediction</span>
