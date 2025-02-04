@@ -11,7 +11,7 @@ import { SiNintendogamecube } from "react-icons/si";
 import Navbar from "@/components/Navbar";
 import latestPlayersWeb from "@/assets/landin-page/latest-players-lg.png";
 import bgGradient from "@/assets/landin-page/bg-gradient.png";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
