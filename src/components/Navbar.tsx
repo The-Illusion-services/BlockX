@@ -6,6 +6,8 @@ import { FaCaretDown } from "react-icons/fa6";
 import { HiMiniXMark } from "react-icons/hi2";
 import { TbMenu3 } from "react-icons/tb";
 
+type NavbarItem = "game" | "tools" | "info" | "community";
+
 const Navbar = () => {
   const [showSideBar, setShowSideBar] = useState(false);
   const handleToggleNavbar = () => {
@@ -23,49 +25,20 @@ const Navbar = () => {
     initialNavbarItemState
   );
 
-  const handleChangeActiveNavbarItem = (item: string) => {
-    if (item === "game") {
-      activeNavbarItem.game === true
-        ? setActiveNavbarItem(initialNavbarItemState)
-        : setActiveNavbarItem({
-            ...activeNavbarItem,
-            game: true,
-            tools: false,
-            community: false,
-            info: false,
-          });
-    } else if (item === "tools") {
-      activeNavbarItem.tools === true
-        ? setActiveNavbarItem(initialNavbarItemState)
-        : setActiveNavbarItem({
-            ...activeNavbarItem,
-            game: false,
-            tools: true,
-            community: false,
-            info: false,
-          });
-    } else if (item === "info") {
-      activeNavbarItem.info === true
-        ? setActiveNavbarItem(initialNavbarItemState)
-        : setActiveNavbarItem({
-            ...activeNavbarItem,
+  const handleChangeActiveNavbarItem = (item: NavbarItem) => {
+    setActiveNavbarItem((prevState) =>
+      prevState[item] === true
+        ? initialNavbarItemState
+        : {
             game: false,
             tools: false,
             community: false,
-            info: true,
-          });
-    } else if (item === "community") {
-      activeNavbarItem.community === true
-        ? setActiveNavbarItem(initialNavbarItemState)
-        : setActiveNavbarItem({
-            ...activeNavbarItem,
-            game: false,
-            tools: false,
-            community: true,
             info: false,
-          });
-    }
+            [item]: true,
+          }
+    );
   };
+
   return (
     <div className="flex justify-between items-center fixed w-full px-4 z-50 h-16 top-0 py-2 bg-black text-white lg:bg-[#060712f2] lg:w-[90%] lg:rounded-[20px]  lg:mx-auto lg:right-0 lg:left-0">
       {showSideBar ? (
