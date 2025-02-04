@@ -68,7 +68,7 @@ const Navbar = () => {
           <div
             className={`lg:absolute ${
               activeNavbarItem.game ? "flex" : "hidden"
-            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-xs py-1`}
+            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-sm lg:text-xs py-1`}
           >
             <span>Roulette</span>
             <span>Price prediction</span>
@@ -91,7 +91,7 @@ const Navbar = () => {
           <div
             className={`lg:absolute ${
               activeNavbarItem.tools ? "flex" : "hidden"
-            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-xs py-1`}
+            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-sm lg:text-xs py-1`}
           >
             <span>Roulette</span>
             <span>Price prediction</span>
@@ -114,7 +114,7 @@ const Navbar = () => {
           <div
             className={`lg:absolute ${
               activeNavbarItem.info ? "flex" : "hidden"
-            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-xs py-1`}
+            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-sm lg:text-xs py-1`}
           >
             <span>Roulette</span>
             <span>Price prediction</span>
@@ -137,7 +137,7 @@ const Navbar = () => {
           <div
             className={`lg:absolute ${
               activeNavbarItem.community ? "flex" : "hidden"
-            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-xs py-1`}
+            } bg-[#060712] lg:justify-evenly w-28 h:36 lg:h-48 lg:mt-52 px-2  flex-col shadow-md text-sm lg:text-xs py-1`}
           >
             <span>Roulette</span>
             <span>Price prediction</span>
